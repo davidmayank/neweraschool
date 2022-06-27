@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Era Central School, Anoopgarh</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/simple-lightbox.css?v2.8.0" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,31 +18,34 @@
         <div class="container">
            <div class="top py-3">
                 <div class="row d-flex align-items-center">
-                    <div class="col-xs-12 col-sm-2 ">
-                        <a href="#" class="logo"><img src="images/logo.png" width="120"> </a>
+                    <div class="col-xs-12 col-sm-2" data-aos="fade-right">
+                        <a href="#" class="logo" data-aos="fade-down"><img src="images/logo.png" width="120"> </a>
                     </div>
                     <div class="col-xs-12 col-sm-10">
-                        <div class="widget d-inline-block me-3">
+                        <div class="widget d-inline-block me-3"  data-aos="fade-down">
                             <div class="d-inline-block"><i class="fa fa-phone text-theme-red me-2"></i></div>
                             <div class="d-inline-block">
                                 <a href="#" class="text-gray text-uppercase">Call Us</a>
                                 <h5 class="text-black m-0 text-uppercase"><a href="Tel:+919414211652">+91 94142 11652</a></h5>
                             </div>
                         </div>                    
-                        <div class="widget d-inline-block me-3">
+                        <div class="widget d-inline-block me-3" data-aos="fade-down">
                             <div class="d-inline-block"><i class="fa fa-envelope text-theme-red me-2"></i></div>
                             <div class="d-inline-block">
                                 <a href="#" class="text-gray text-uppercase">Mail Us</a>
                                 <h5 class="text-black m-0 text-uppercase"><a href="Mailto:newera2014aph@gmail.com">newera2014aph@gmail.com</a></h5>
                             </div>
                         </div>                    
-                        <div class="widget d-inline-block">
+                        <div class="widget d-inline-block" data-aos="fade-left">
                             <div class="d-inline-block"><i class="fa fa-map-marker text-theme-red me-2"></i></div>
                             <div class="d-inline-block">
                                 <a href="#" class="text-gray text-uppercase">Reach to Us</a>
                                 <h5 class="text-black m-0 text-uppercase"><a href="#">Near Govt. I.T.I. College, ANOOPGARH (Rajasthan)
                                     PIN 335701</a></h5>
                             </div>
+                        </div>
+                        <div class="w-100 my-3">
+                            <p><strong>Affiliation Number 1730607</strong> English Medium,Co-Educational, Senior Secondary, Affi. to CBSE, New Delhi</p>
                         </div>
                     </div>
                 </div>
@@ -59,9 +62,9 @@
                       <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                       <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="#">Overview</a></li>
-                          <li><a class="dropdown-item" href="#">Principal's Message</a></li>
-                          <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+                          <li><a class="dropdown-item" href="#overflow">Overview</a></li>
+                          <li><a class="dropdown-item" href="#principalmessage">Principal's Message</a></li>
+                          <li><a class="dropdown-item" href="#vision">Vision and Mission</a></li>
                         </ul>
                       </li>
                       <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admission</a>
@@ -70,16 +73,13 @@
                           <li><a class="dropdown-item" href="#">Fee Structure</a></li>
                           <li><a class="dropdown-item" href="#">Online Fee Procedure</a></li>
                         </ul>
-                      </li>
-                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                      </li>                     
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          <li><a class="dropdown-item" href="#">Overview</a></li>
-                          <li><a class="dropdown-item" href="#">Principal's Message</a></li>
-                          <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+                          <li><a class="dropdown-item" href="#">Transfer Certificate</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     </ul>
                   </div>
@@ -92,7 +92,13 @@
         <div class="container-fluid">
             <div class="row">
             <div class="owl-carousel owl-theme">
-                <div class="item"><img src="images/slide-1.jpeg" alt=""></div>
+                <div class="item position-relative">
+                    <img src="images/slide-1.jpeg" alt="">
+                    <div class="position-absolute text-block">
+                        <h2>Welcome Text</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequuntur ipsa quis exercitationem dolor sed tempora, perferendis provident, qui ut expedita id in officia nemo. Animi odit fuga atque voluptatum.</p>
+                    </div>
+                </div>
                 <div class="item"><img src="images/slide-2.jpeg" alt=""></div>
                 <div class="item"><img src="images/slide-3.jpeg" alt=""></div>
                 <div class="item"><img src="images/slide-4.jpeg" alt=""></div>
@@ -103,17 +109,46 @@
     </section>
     <section class="about-school py-5 bg-light">
         <div class="container">
-            <div class="row">
+            <div id="overflow" class="py-5">
                 <h1 class="mb-5 text-center h1-heading position-relative text-theme-blue">Welcome NEW ERA CENTRAL SCHOOL, ANUPGARH</h1>
-                
-                <div class="col-sm-12 col-md-8 m-auto">
-                    <figure><img src="images/about-school.jpeg" class="img-fluid mx-3" alt="School Image"></figure>
-                    
+                <div class="row">                
+                    <div class="col-sm-12 col-md-6 m-auto">
+                    <figure><img src="images/about-school.jpeg" class="img-fluid" alt="School Image"></figure>                    
                     </div>
-                    <div class="col-sm-12 col-md-10  m-auto">
-                        <p class="position-relative display-6 text-center">Education is the way by which we learn to move with new dreams and taking motto of success, keeping pace with the new world as well as giving dignity to our cultural heritage. New Era Central School provides an environment to enable the children to grow in a free and creative atmosphere through a variety of planned activities that help to provide a balanced growth physically, mentally, intellectually and morally. Our students make their presence in every walk of life. Our motto is to work with selfless devotion and dedication to the welfare of our students.</p>
+                    <div class="col-sm-12 col-md-6 m-auto">
+                        <p class="position-relative quotes">Education is the way by which we learn to move with new dreams and taking motto of success, keeping pace with the new world as well as giving dignity to our cultural heritage. New Era Central School provides an environment to enable the children to grow in a free and creative atmosphere through a variety of planned activities that help to provide a balanced growth physically, mentally, intellectually and morally. Our students make their presence in every walk of life. Our motto is to work with selfless devotion and dedication to the welfare of our students.</p>
+                    </div>
                 </div>
             </div>
+            <div id="principalmessage" class="py-5">
+                <h1 class="mb-5 text-start h1-heading position-relative text-theme-blue">Principal's Message</h1>
+                <div class="row"> 
+                    <div class="col-sm-12 col-md-8 m-auto">
+                        <p class="position-relative"><strong>It is not in the stars to hold our destiny but in ourselves.
+                            – William Shakespeare</strong><br><br>                            
+                            Today, the role of school is not only to pursue academic excellence but also to motivate and empower its students to be lifelong learners, critical thinkers, and productive members of an ever-changing global society. At New Era Central School, we provide an atmosphere to our students for multifaced development, where children are encouraged to channelize their potential in the pursuit of excellence. This can only be possible in a holistic, student-centric environment.<br><br>
+                                        Learning is not a progress limited to schools and colleges only, nor does it end with conclusion of one’s school career. It is indeed a lifelong process. This school is oriented to the total formation of a child and to adaptation of various methods suiting the dynamics of changing world in order to achieve common goals and objectives. It is further characterized by shared vision-responsibilities and above all, love and faith in God in order to achieve these goals.<br><br>
+                                        Dear students, it is my message to you all that the people of fine character live by their values. They are honest and are committed to truthfulness, word and deed. True character thus encompasses the capacity for self-discipline.<br><br>
+                                        Character creates self-respect, which in turn leads to high self-esteem. Maturity is reflected in all aspects of character-the decision we make, the friends we choose and the responsibilities we accept. Always remember to uphold the dignity of people. Be always ready to give preference to other. What you are is God’s gift to you. What you become is your gift to God. Have something to live for. Bring out the best in you.<br><br>
+                            “With warm wishes and Almighty’s blessings”.<br><br>
+                            Aashish Nagpal - Principal</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <figure class="img-thumbnail"><img src="images/principal-photo.jpeg" class="img-fluid" alt="School Image"></figure>                    
+                    </div>
+                </div>
+            </div>
+            
+            <div id="vision" class="py-5">
+            <h1 class="mb-5 text-center h1-heading position-relative text-theme-blue">Vision and Mission</h1>
+            <div class="row"> 
+                <div class="col-sm-12 col-md-6 m-auto">
+                    <p class="position-relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum quidem eius veritatis consequuntur voluptas nam explicabo? Architecto, molestias velit accusamus ipsum doloremque, minus alias eos maxime ea, tenetur dolorem?</p>
+                </div>
+                
+            </div>
+            </div>
+            
         </div>
     </section>
     <section class="py-5 bg-dark">
@@ -121,30 +156,31 @@
             <div class="row">
                 <h1 class="mb-5 text-center h1-heading position-relative text-theme-red">Unique @NEW ERA </h1>
                 <div class="col-sm-12 col-md-3">
+                    
                     <div class="funfact text-center">
                         <i class="fa fa-smile-o mt-5 text-theme-red fs-1"></i>
-                        <h2 data-animation-duration="2000" data-value="28" class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></h2>
+                        <h2 class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><span class="count">8</span></h2>
                         <h5 class="text-white text-uppercase mb-0">YEARS EXPERINCE</h5>
                     </div>
                     </div>
                     <div class="col-sm-12 col-md-3">
                         <div class="funfact text-center">
                             <i class="fa fa-user mt-5 text-theme-red fs-1"></i>
-                            <h2 data-animation-duration="2000" data-value="28" class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">52</font></font></h2>
+                            <h2 class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><span class="count">56</span></h2>
                             <h5 class="text-white text-uppercase mb-0">FACULTY</h5>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-3">
                         <div class="funfact text-center">
                             <i class="fa fa-users mt-5 text-theme-red fs-1"></i>
-                            <h2 data-animation-duration="2000" data-value="28" class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2800</font></font></h2>
+                            <h2 class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><span class="count">2800</span></h2>
                             <h5 class="text-white text-uppercase mb-0">ALUMNI</h5>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-3">
                         <div class="funfact text-center">
                             <i class="fa fa-bus mt-5 text-theme-red fs-1"></i>
-                            <h2 data-animation-duration="2000" data-value="28" class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></h2>
+                            <h2 class="animate-number text-white mt-20 mb-0 font-38 font-weight-500 appeared"><span class="count">14</span></h2>
                             <h5 class="text-white text-uppercase mb-0">TRANSPORT</h5>
                         </div>
                    
@@ -152,7 +188,7 @@
             </div>
         </div>
     </section>
-    <section class="our-gallery py-5">
+    <section id="gallery" class="our-gallery py-5">
         <div class="container">
             <div class="">
                 <h1 class="mb-5 text-center h1-heading position-relative text-theme-blue">Our Gallery</h1>
@@ -289,6 +325,27 @@
         (function() {
             var $gallery = new SimpleLightbox('.gallery a', {});
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      AOS.init();
+      });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration:16000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+});
     </script>
 </body>
 </html>
